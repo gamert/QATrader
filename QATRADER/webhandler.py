@@ -133,7 +133,7 @@ class TradeAccountHandler(QABaseHandler):
 
 def adaptChange(x): return float(x) if '.' in str(x) else int(x)
 
-
+# for http
 class SendOrderHandler(QABaseHandler):
     event = {}
     starttime = str(datetime.datetime.now())
