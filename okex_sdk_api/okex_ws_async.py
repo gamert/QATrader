@@ -491,7 +491,9 @@ class OKEXWebsocket_Async(object):
 
         loop.close()
 
-
+if __name__ == '__main__':
+    okex_ws = OKEXWebsocket_Async(host=ok_ws_url, ping_interval=20)
+    okex_ws.run()
 
 
 
