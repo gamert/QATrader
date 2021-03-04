@@ -23,8 +23,8 @@ from qaenv import mongo_ip, mongo_uri, eventmq_ip, eventmq_port, eventmq_usernam
 2. consumer  : ==> QAORDER_ROUTER EXCHANGE
 """
 
-
-class QA_TRADER(QA_Thread):
+##
+class QA_TRADER_OKEX(QA_Thread):
     """trade_account 是一个线程/ 具备websocket能力/ 实例化为一个可以交易的websocket型账户
 
     Arguments:
